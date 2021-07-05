@@ -1,0 +1,73 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "25watt examen",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/tarea": {
+            "get": {
+                "summary": "Mostrar tarea",
+                "operationId": "8a9da67d21c6d81746b7c7bb874441f0",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todas las tareas."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            },
+            "post": {
+                "summary": "almacenar tarea",
+                "operationId": "b8df42e76d2a339d50ff70a384181e2a",
+                "responses": {
+                    "200": {
+                        "description": "Se almaceno la tarea."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/tarea/$tarea": {
+            "get": {
+                "summary": "Mostrar tarea",
+                "operationId": "1f84652f0b1ab77f33f0f30bded00cc5",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar la tarea."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Actualizar tarea",
+                "operationId": "1817f70cfddc1f02ab319449bb7172a2",
+                "responses": {
+                    "200": {
+                        "description": "Se Actualizo la tarea."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Eliminar tarea",
+                "operationId": "9578cb5ce6dca8d5205c05e0701b3884",
+                "responses": {
+                    "200": {
+                        "description": "Se Eliminar la tarea."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        }
+    }
+}
